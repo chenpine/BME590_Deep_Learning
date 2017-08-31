@@ -3,9 +3,11 @@
 
 ## Part A
 
+**Number of Operations**
+
 ### 1280 X 720
 
-**Number of Operations** 
+ 
 - Task 1:   917604
 
 - Task 2:   1827232
@@ -18,8 +20,8 @@
 
 ### 1920 X 1080
 
-Number of Operations of Task 1:  2067604
+- Task 1:  2067604
 
-Number of Operations of Task 2:  4123232
+- Task 2:  4123232
 
-Number of Operations of Task 3:  1550703
+- Task 3:  1550703
