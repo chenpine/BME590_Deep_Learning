@@ -5,11 +5,12 @@
 
 ### 1280 X 720
 
-Number of Operations of Task 1:  917604
+**Number of Operations** 
+- Task 1:   917604
 
-Number of Operations of Task 2:  1827232
+- Task 2:   1827232
 
-Number of Operations of Task 3:  688203
+- Task 3:   688203
 
 
 
