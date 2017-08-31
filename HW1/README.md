@@ -3,7 +3,7 @@
 
 ## Part A
 
-**Number of Operations**
+**Number of Operations: **
 
 ### 1280 X 720
 
