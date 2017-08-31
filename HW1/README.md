@@ -5,23 +5,41 @@
 
 **Number of Operations:**
 
-### 1280 X 720
-
  
-- Task 1:   917604
+### Task 1:   
+- in_channel: 3
+- o_channel: 1 
+- kernel_size: 3
+- stride: 1
+- mode: "known"
+- kernel to use: K1
+#### 1280 X 720 Result: 917604 (#)
+#### 1920 X 1080 Result: 2067604 (#)
 
-- Task 2:   1827232
 
-- Task 3:   688203
+### Task 2:   
+- in_channel: 3
+- o_channel: 2 
+- kernel_size: 5
+- stride: 1
+- mode: "known"
+- kernel to use: K4, K5
+#### 1280 X 720 Result: 1827232 (#)
+#### 1920 X 1080 Result: 4123232 (#)
+
+
+### Task 3:   
+- in_channel: 3
+- o_channel: 3 
+- kernel_size: 3
+- stride: 2
+- mode: "known"
+- kernel to use: K1, K2, K3   
+#### 1280 X 720 Result: 688203 (#)
+#### 1920 X 1080 Result: 1550703 (#)
 
 
 
+## Part B
 
-
-### 1920 X 1080
-
-- Task 1:  2067604
-
-- Task 2:  4123232
-
-- Task 3:  1550703
+**
