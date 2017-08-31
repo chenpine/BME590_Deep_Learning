@@ -56,3 +56,33 @@
 
 
 ## Part B (set o_channel to 2^i, i = 0, 1, ...10 and mode = 'rand')
+
+### i = 0:
+
+#### 1280 X 720:
+**Operation Time:**
+~ 250 (sec)
+
+#### 1920 X 1080:
+**Operation Time:**
+~ 450 (sec)
+
+### i = 1:
+
+#### 1280 X 720:
+**Operation Time:**
+~ 430 (sec)
+
+#### 1920 X 1080:
+**Operation Time:**
+~ 950 (sec)
+
+### i = 2:
+
+#### 1280 X 720:
+**Operation Time:**
+~ 800 (sec)
+
+#### 1920 X 1080:
+**Operation Time:**
+~ 1950 (sec)
