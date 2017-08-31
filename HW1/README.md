@@ -55,7 +55,14 @@
 
 
 
-## Part B (set o_channel to 2^i, i = 0, 1, ...10 and mode = 'rand')
+## Part B 
+
+- in_channel: 3
+- o_channel: 2^i, i = 0, 1, ...10 
+- kernel_size: 3
+- stride: 1
+- mode: "rand"
+- kernel to use: K1
 
 ### i = 0:
 
@@ -86,3 +93,8 @@
 #### 1920 X 1080:
 **Operation Time:**
 ~ 1950 (sec)
+
+### (i = 3 ~ 10) will take too long and the trend is clear to be seen (exponential growth)
+
+
+## Part C (set kernel_size = 3, 5, ...11 and mode = 'rand')
