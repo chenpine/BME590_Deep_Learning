@@ -2,9 +2,6 @@
 
 
 ## Part A
-
-**Number of Operations:**
-
  
 ### Task 1:   
 - in_channel: 3
@@ -14,10 +11,12 @@
 - mode: "known"
 - kernel to use: K1
 #### 1280 X 720: 
+**Number of Operations:**
 917,604 (#)
 
 
-#### 1920 X 1080: 
+#### 1920 X 1080:
+**Number of Operations:**
 2,067,604 (#)
 
 
@@ -29,10 +28,12 @@
 - mode: "known"
 - kernel to use: K4, K5
 #### 1280 X 720:
+**Number of Operations:**
 1,827,232 (#)
 
 
 #### 1920 X 1080: 
+**Number of Operations:**
 4,123,232 (#)
 
 
@@ -44,12 +45,14 @@
 - mode: "known"
 - kernel to use: K1, K2, K3   
 #### 1280 X 720:
+**Number of Operations:**
 688,203 (#)
 
 
 #### 1920 X 1080: 
+**Number of Operations:**
 1,550,703 (#)
 
 
 
-## Part B
+## Part B (set o_channel to 2^i, i = 0, 1, ...10 and mode = 'rand')
