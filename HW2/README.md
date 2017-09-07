@@ -1,4 +1,4 @@
-# BME595A HW2
+# BME 595 HW2
 ## neural_network.py (NeuralNetwork Class)
 ### __init__(self, layerSize = []):
   - layerSize: the input list of layers
