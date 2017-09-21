@@ -93,6 +93,7 @@
                 self.MI2N.backward(target)
                 self.MI2N.updateParams(0.1)
   ```
+  
   #### forward(self, img)
   - forward function for test sets
   ```python
@@ -109,6 +110,47 @@
 
 ![alt text](https://github.com/chenpine/BME595_Deep_Learning/blob/master/HW4/myNN_error%20rate.png "Error Rate vs. Epoch")
 ![alt text](https://github.com/chenpine/BME595_Deep_Learning/blob/master/HW4/myNN_operation%20time.png "Operation Time vs. Epoch")
+
+## nn_img2num.py
+### NnImg2Num class
+  #### __init__(self)
+  - Using nn.Module constructor
+  - Building two nn.Linear modules with size (784, 98) and (98, 10)
+  ```python
+  super(NnImg2Num, self).__init__()
+        self.fc1 = nn.Linear(784, 98)
+        self.fc2 = nn.Linear(98, 10)
+  ```
+  
+  #### train(self)
+  - Load the MNIST data and set batch size to 20
+  - Use optim package to update the parameters and set learning rate = 0.1
+  - Run forward-backward-update cycle with nn functions
+  ```python
+  optimizer = optim.SGD(self.parameters(), lr = 0.1)
+        for e in range(self.epoch):
+            for batch_index, (data, label) in enumerate(self.TrainLoader):
+                optimizer.zero_grad()
+                
+                Data = torch.zeros(20, 784)
+                for batch in range(20):
+                    Data[batch,:] = data[batch][0].view(784)
+                    
+                z1 = self.fc1(Variable(Data))
+                sg = nn.Sigmoid()
+                h1 = sg(z1)
+                output = self.fc2(h1)
+                
+                target = torch.zeros(20, 10)
+                for i in range(20):
+                    target[i, label[i]] = 1
+                target = Variable(target)
+                loss_o = nn.MSELoss()
+                loss = loss_o(output, target)
+                loss.backward()
+                optimizer.step()
+  ```
+  
 
 
   
