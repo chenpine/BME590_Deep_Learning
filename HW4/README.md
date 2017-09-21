@@ -15,9 +15,10 @@ Using nn package will be monotonic decreasing from ~9% to ~3% as epoch number go
 ### Operation time: 
 
 Both cases have similar scale (100 to 1000 seconds) and show linear growth with respect to epoch number, as nn package consumes slightly more time to run.
-## NeuralNetwork.py (NeuralNetwork Class)
+## NeuralNetwork.py 
+### NeuralNetwork class
 
-### __init__(self, layerSize = []):
+#### __init__(self, layerSize = []):
   - layerSize: the input list of layers
   - Theta = []
   - dE_dTheta = []
@@ -26,10 +27,10 @@ Both cases have similar scale (100 to 1000 seconds) and show linear growth with 
   ```python
   self.theta.append(randn(layerSize[i] + 1, layerSize[i + 1]))
   ```
-### getLayer(self, layer):
+#### getLayer(self, layer):
   - return the theta tensor at that layer
   
-### forward(self, Input):
+#### forward(self, Input):
   - a, z = [], []
   - if-else condition is used to differentiate matrix-vector and matrix-matrix multiplication. Every layer of theta is transposed before conducting multiplication. (theta' X Input)
   - Feed each output into sigmoid function, and the output of the current layer will be the input to the next layer, and store the outputs of each layer in a and z lists.
@@ -52,7 +53,7 @@ Both cases have similar scale (100 to 1000 seconds) and show linear growth with 
                 self.a.append(self.Output)
   ```
   
-### backward(self, target):
+#### backward(self, target):
   - Use the list "a" that created in forward to help calculate theta and dE_dTheta of each layer 
   - if-else condiction is used to decide whether we have one/multiple samples. 
   ```python
@@ -79,7 +80,7 @@ Both cases have similar scale (100 to 1000 seconds) and show linear growth with 
                     self.delta = mul(mm(self.Theta[i-1], self.delta[1:]), mul(self.aH, 1 - self.aH))
   ```
 
-### updateParams(self, eta):
+#### updateParams(self, eta):
   - for loop to update each layer of theta with respect to the given learning rate eta
   ```python
   for i in range(self.layerNum - 1):
