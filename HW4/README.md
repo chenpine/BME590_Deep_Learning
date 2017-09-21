@@ -1,4 +1,11 @@
 # BME 595 HW4
+## Conclusion
+### Test error rate: 
+
+Using nn package will be monotonic decreasing from ~9% to ~3% as epoch number goes up, whereas in my own designed case, the error rate keeps fluctuating between ~4% to ~23%. Maybe using learning rate = 0.1 is ok for nn package, but too big for my NN.
+### Operation time: 
+
+Both cases have similar scale (100 to 1000 seconds) show linear growth with respect to epoch number, as nn package consumes slightly more time to run.
 ## NeuralNetwork.py (NeuralNetwork Class)
 
 ### __init__(self, layerSize = []):
