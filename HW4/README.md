@@ -150,7 +150,26 @@
                 loss.backward()
                 optimizer.step()
   ```
-  
+  #### forward(self, img)
+  - forward function for test sets
+  ```python
+  Input = Variable(img.view(784))
+        z1 = self.fc1(Input)
+        sg = nn.Sigmoid()
+        h1 = sg(z1)
+        z2 = self.fc2(h1)
+        Output = sg(z2)
+        value, inx = torch.max(Output, 0)
+        return inx
+  ```
+  ### Test Training results
+  - Using custom test file
+  - Set batch size to 1
+  - Test epoch from 10 to 100
+  - Count the opeation time and error rate for each run
+
+![alt text](https://github.com/chenpine/BME595_Deep_Learning/blob/master/HW4/NN_error%20rate.png "Error Rate vs. Epoch")
+![alt text](https://github.com/chenpine/BME595_Deep_Learning/blob/master/HW4/NN_operation%20time.png "Operation Time vs. Epoch")
 
 
   
