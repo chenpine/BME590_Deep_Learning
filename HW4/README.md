@@ -1,5 +1,14 @@
 # BME 595 HW4
 ## Conclusion
+### Neural Network Design:
+
+I use the same parameters for both cases:
+- 3 Layers: 784 -> 98 -> 10
+- Activation function: Sigmoid
+- Learning rate: 0.1
+- Loss function: MSE
+
+
 ### Test error rate: 
 
 Using nn package will be monotonic decreasing from ~9% to ~3% as epoch number goes up, whereas in my own designed case, the error rate keeps fluctuating between ~4% to ~23%. Perhaps using learning rate = 0.1 is fine for nn package, but too big for my NN.
