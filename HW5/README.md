@@ -56,7 +56,7 @@ Output = F.relu(self.fc2(Output))
 Output = self.fc3(Output)
 value, inx = torch.max(Output, 1)
 return inx
-
+```
 
 ## img2obj.py
 ### img2obj class
