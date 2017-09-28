@@ -8,7 +8,13 @@ In MNIST case, CNN has higher accuracy but take longer time to train.
 ![alt text](https://github.com/chenpine/BME595_Deep_Learning/blob/master/HW5/OperationTime_LeNet_MNIST.png "CNN: Operation Time vs. Epoch")
 
 
+In CIFAR-100 training case, the test accuracy is low even using lr = 0.7 and up to 60 epoch.
+![alt text](https://github.com/chenpine/BME595_Deep_Learning/blob/master/HW5/CIFAR_lr%3D0.7_Error.png "CNN: Error Rate vs. Epoch")
+![alt text](https://github.com/chenpine/BME595_Deep_Learning/blob/master/HW5/CIFAR_lr%3D0.7_Time.png "CNN: Operation Time vs. Epoch")
 
+
+Nonetheless, we can still use this trained model to try to give the correct caption to the webcam-fetched image.
+![alt text](https://github.com/chenpine/BME595_Deep_Learning/blob/master/HW5/opencv_frame_0.png "CNN: Error Rate vs. Epoch")
 ## img2num.py
 ### img2num class
 #### train(self)
