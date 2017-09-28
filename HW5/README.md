@@ -7,6 +7,8 @@ In MNIST case, CNN has higher accuracy but take longer time to train.
 ![alt text](https://github.com/chenpine/BME595_Deep_Learning/blob/master/HW5/ErrorRate_LeNet_MNIST.png "CNN: Error Rate vs. Epoch")
 ![alt text](https://github.com/chenpine/BME595_Deep_Learning/blob/master/HW5/OperationTime_LeNet_MNIST.png "CNN: Operation Time vs. Epoch")
 
+
+
 ## img2num.py
 ### img2num class
 #### train(self)
