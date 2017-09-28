@@ -6,8 +6,10 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 
 class img2num(nn.Module):
-    def __init__(self):
+    #def __init__(self):
         
+        
+    def train(self):
         # LeNet-5 building
         super(img2num, self).__init__()
         self.conv1 = nn.Conv2d(1, 6, 5)
@@ -15,7 +17,7 @@ class img2num(nn.Module):
         self.fc1 = nn.Linear(256, 120)
         self.fc2 = nn.Linear(120, 84)
         self.fc3 = nn.Linear(84, 10)
-    def train(self):
+        
         # Load MNIST training data
         self.TrainLoader = torch.utils.data.DataLoader(datasets.MNIST('../data', train = True, download = True, 
                                                           transform = transforms.Compose([
